@@ -1,6 +1,7 @@
 export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string};
 
 const apiKey=import.meta.env.VITE_TWELVE_DATA_API_KEY as string|undefined;
+const alphaKey=import.meta.env.VITE_ALPHA_VANTAGE_API_KEY as string|undefined;
 const endpoint='https://api.twelvedata.com';
 export const marketDataConfigured=Boolean(apiKey);
 
@@ -17,14 +18,37 @@ export async function searchMarket(term:string,signal?:AbortSignal){
  return result.data||[];
 }
 
-export async function getEuroPrice(result:MarketResult){
- const quote=await request<{price:string}>('/price',{symbol:result.symbol,...(result.exchange?{exchange:result.exchange}:{})});
- const price=Number(quote.price);
- if(!Number.isFinite(price))throw new Error('Prezzo non disponibile');
- const currency=result.currency?.toUpperCase()||'EUR';
- if(currency==='EUR')return price;
- const fx=await request<{rate:string}>('/exchange_rate',{symbol:`${currency}/EUR`});
+async function toEuro(price:number,currency:string){
+ const normalized=currency.toUpperCase()==='GBX'?{price:price/100,currency:'GBP'}:{price,currency:currency.toUpperCase()};
+ if(normalized.currency==='EUR')return normalized.price;
+ const fx=await request<{rate:string}>('/exchange_rate',{symbol:`${normalized.currency}/EUR`});
  const rate=Number(fx.rate);
- if(!Number.isFinite(rate))throw new Error(`Cambio ${currency}/EUR non disponibile`);
- return price*rate;
+ if(!Number.isFinite(rate))throw new Error(`Cambio ${normalized.currency}/EUR non disponibile`);
+ return normalized.price*rate;
+}
+
+async function getAlphaVantagePrice(result:MarketResult){
+ if(!alphaKey)throw new Error('Prezzo non incluso nel piano gratuito di Twelve Data. Inseriscilo manualmente oppure configura il fallback gratuito Alpha Vantage.');
+ const searchQuery=new URLSearchParams({function:'SYMBOL_SEARCH',keywords:result.symbol,apikey:alphaKey});
+ const searchResponse=await fetch(`https://www.alphavantage.co/query?${searchQuery}`);
+ const search=await searchResponse.json();
+ const matches=(search.bestMatches||[]) as Record<string,string>[];
+ const base=result.symbol.replace(/[^A-Z0-9]/gi,'').toUpperCase();
+ const match=matches.find(x=>(x['1. symbol']||'').split('.')[0].toUpperCase()===base)||matches[0];
+ if(!match)throw new Error('Prezzo non disponibile gratuitamente per questo strumento. Puoi inserirlo manualmente.');
+ const quoteQuery=new URLSearchParams({function:'GLOBAL_QUOTE',symbol:match['1. symbol'],apikey:alphaKey});
+ const quoteResponse=await fetch(`https://www.alphavantage.co/query?${quoteQuery}`);
+ const quote=await quoteResponse.json();
+ const price=Number(quote['Global Quote']?.['05. price']);
+ if(!Number.isFinite(price)||price<=0)throw new Error('Quotazione gratuita momentaneamente non disponibile. Puoi inserire il prezzo manualmente.');
+ return toEuro(price,match['8. currency']||result.currency||'EUR');
+}
+
+export async function getEuroPrice(result:MarketResult){
+ try{
+  const quote=await request<{price:string}>('/price',{symbol:result.symbol,...(result.exchange?{exchange:result.exchange}:{})});
+  const price=Number(quote.price);
+  if(!Number.isFinite(price))throw new Error('Prezzo non disponibile');
+  return toEuro(price,result.currency||'EUR');
+ }catch{return getAlphaVantagePrice(result)}
 }
