@@ -1,4 +1,6 @@
-export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string;isin?:string};
+import governmentBondCatalog from './data/italian-government-bonds.json';
+
+export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string;isin?:string;priceAvailable?:boolean};
 
 const apiKey=import.meta.env.VITE_TWELVE_DATA_API_KEY as string|undefined;
 const alphaKey=import.meta.env.VITE_ALPHA_VANTAGE_API_KEY as string|undefined;
@@ -7,6 +9,15 @@ const endpoint='https://api.twelvedata.com';
 export const marketDataConfigured=Boolean(apiKey);
 let alphaQueue=Promise.resolve();
 let lastAlphaRequest=0;
+
+const governmentBondResults=(term:string):MarketResult[]=>{
+ const query=term.trim().toLocaleLowerCase('it-IT');
+ return governmentBondCatalog.bonds
+  .filter(bond=>bond.isin.toLowerCase().includes(query)||bond.name.toLocaleLowerCase('it-IT').includes(query)||bond.type.toLocaleLowerCase('it-IT').includes(query))
+  .sort((a,b)=>Number(b.isin.toLowerCase()===query)-Number(a.isin.toLowerCase()===query)||a.name.localeCompare(b.name,'it'))
+  .slice(0,8)
+  .map(bond=>({symbol:bond.isin,instrument_name:bond.name,instrument_type:'Government Bond',currency:'EUR',country:'Italy',isin:bond.isin,priceAvailable:false}));
+};
 
 async function request<T>(path:string,params:Record<string,string>,signal?:AbortSignal):Promise<T>{
  const query=new URLSearchParams({...params,apikey:apiKey||''});
@@ -18,6 +29,8 @@ async function request<T>(path:string,params:Record<string,string>,signal?:Abort
 
 export async function searchMarket(term:string,signal?:AbortSignal){
  const normalized=term.trim().toUpperCase();
+ const governmentBonds=governmentBondResults(term);
+ if(governmentBonds.length)return governmentBonds;
  if(/^[A-Z]{2}[A-Z0-9]{9}[0-9]$/.test(normalized)){
   if(!finnhubKey)throw new Error('Configura VITE_FINNHUB_API_KEY per cercare le obbligazioni tramite ISIN.');
   const query=new URLSearchParams({q:normalized,token:finnhubKey});
@@ -70,6 +83,7 @@ async function getAlphaVantagePrice(result:MarketResult){
 }
 
 export async function getEuroPrice(result:MarketResult){
+ if(result.priceAvailable===false)throw new Error('Prezzo corrente da inserire manualmente per questo titolo di Stato.');
  try{
   const quote=await request<{price:string}>('/price',{symbol:result.symbol,...(result.exchange?{exchange:result.exchange}:{})});
   const price=Number(quote.price);

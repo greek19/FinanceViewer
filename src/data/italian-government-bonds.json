@@ -1,0 +1,1816 @@
+{
+  "asOf": "2026-07-13",
+  "source": "https://www.bancaditalia.it/compiti/operazioni-mef/titoli-circolazione/",
+  "bonds": [
+    {
+      "isin": "IT0005660029",
+      "name": "BOT 365 gg 14.7.2025 - 14.7.2026",
+      "type": "BOT",
+      "issueDate": "2025-07-14",
+      "maturityDate": "14-07-2026",
+      "rateType": "F",
+      "outstandingMln": 9150,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005704454",
+      "name": "BOT 91 gg 14.4.2026 - 14.7.2026",
+      "type": "BOT",
+      "issueDate": "2026-04-14",
+      "maturityDate": "14-07-2026",
+      "rateType": "F",
+      "outstandingMln": 5050,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005370306",
+      "name": "BTP 2,1% 15.4.2019 - 15.7.2026",
+      "type": "BTP",
+      "issueDate": "2019-04-15",
+      "maturityDate": "15-07-2026",
+      "rateType": "F",
+      "outstandingMln": 16225,
+      "currentCoupon": 1.05
+    },
+    {
+      "isin": "IT0005692485",
+      "name": "BOT 182 gg 30.1.2026 - 31.7.2026",
+      "type": "BOT",
+      "issueDate": "2026-01-30",
+      "maturityDate": "31-07-2026",
+      "rateType": "F",
+      "outstandingMln": 10800,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005454241",
+      "name": "BTP 0% 1.8.2021 - 1.8.2026",
+      "type": "BTP",
+      "issueDate": "2021-08-01",
+      "maturityDate": "01-08-2026",
+      "rateType": "F",
+      "outstandingMln": 16591,
+      "currentCoupon": 0
+    },
+    {
+      "isin": "IT0005666851",
+      "name": "BOT 365 gg 14.8.2025 - 14.8.2026",
+      "type": "BOT",
+      "issueDate": "2025-08-14",
+      "maturityDate": "14-08-2026",
+      "rateType": "F",
+      "outstandingMln": 8800,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005607269",
+      "name": "BTP 3,1% 29.7.2024 - 28.8.2026",
+      "type": "BTP",
+      "issueDate": "2024-07-29",
+      "maturityDate": "28-08-2026",
+      "rateType": "F",
+      "outstandingMln": 13241,
+      "currentCoupon": 1.55
+    },
+    {
+      "isin": "IT0005669269",
+      "name": "BOT 367 gg 12.9.2025 - 14.9.2026",
+      "type": "BOT",
+      "issueDate": "2025-09-12",
+      "maturityDate": "14-09-2026",
+      "rateType": "F",
+      "outstandingMln": 9000,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0004735152",
+      "name": "BTP ind. 3,1% 15.3.2011 - 15.9.2026",
+      "type": "BTPI",
+      "issueDate": "2011-03-15",
+      "maturityDate": "15-09-2026",
+      "rateType": "F",
+      "outstandingMln": 12570,
+      "currentCoupon": 1.55
+    },
+    {
+      "isin": "IT0005556011",
+      "name": "BTP 3,85% 17.7.2023 - 15.9.2026",
+      "type": "BTP",
+      "issueDate": "2023-07-17",
+      "maturityDate": "15-09-2026",
+      "rateType": "F",
+      "outstandingMln": 15509,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0005702656",
+      "name": "BOT 183 gg 31.3.2026 - 30.9.2026",
+      "type": "BOT",
+      "issueDate": "2026-03-31",
+      "maturityDate": "30-09-2026",
+      "rateType": "F",
+      "outstandingMln": 10637,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005674335",
+      "name": "BOT 365 gg 14.10.2025 - 14.10.2026",
+      "type": "BOT",
+      "issueDate": "2025-10-14",
+      "maturityDate": "14-10-2026",
+      "rateType": "F",
+      "outstandingMln": 9900,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0001086567",
+      "name": "BTP 7,25% 1.11.1996 - 1.11.2026",
+      "type": "BTP",
+      "issueDate": "1996-11-01",
+      "maturityDate": "01-11-2026",
+      "rateType": "F",
+      "outstandingMln": 12423,
+      "currentCoupon": 3.625
+    },
+    {
+      "isin": "IT0005678492",
+      "name": "BOT 364 gg 14.11.2025 - 13.11.2026",
+      "type": "BOT",
+      "issueDate": "2025-11-14",
+      "maturityDate": "13-11-2026",
+      "rateType": "F",
+      "outstandingMln": 8500,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005711749",
+      "name": "BOT 185 gg 29.5.2026 - 30.11.2026",
+      "type": "BOT",
+      "issueDate": "2026-05-29",
+      "maturityDate": "30-11-2026",
+      "rateType": "F",
+      "outstandingMln": 9128,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005210650",
+      "name": "BTP 1,25% 1.8.2016 - 1.12.2026",
+      "type": "BTP",
+      "issueDate": "2016-08-01",
+      "maturityDate": "01-12-2026",
+      "rateType": "F",
+      "outstandingMln": 19777,
+      "currentCoupon": 0.625
+    },
+    {
+      "isin": "IT0005684888",
+      "name": "BOT 367 gg 12.12.2025 - 14.12.2026",
+      "type": "BOT",
+      "issueDate": "2025-12-12",
+      "maturityDate": "14-12-2026",
+      "rateType": "F",
+      "outstandingMln": 9900,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005719536",
+      "name": "BOT 184 gg 30.6.2026 - 31.12.2026",
+      "type": "BOT",
+      "issueDate": "2026-06-30",
+      "maturityDate": "31-12-2026",
+      "rateType": "F",
+      "outstandingMln": 4693,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005689887",
+      "name": "BOT 365 gg 14.1.2026 - 14.1.2027",
+      "type": "BOT",
+      "issueDate": "2026-01-14",
+      "maturityDate": "14-01-2027",
+      "rateType": "F",
+      "outstandingMln": 8800,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005390874",
+      "name": "BTP 0,85% 15.11.2019 - 15.1.2027",
+      "type": "BTP",
+      "issueDate": "2019-11-15",
+      "maturityDate": "15-01-2027",
+      "rateType": "F",
+      "outstandingMln": 18864,
+      "currentCoupon": 0.425
+    },
+    {
+      "isin": "IT0005695256",
+      "name": "BOT 364 gg 13.2.2026 - 12.2.2027",
+      "type": "BOT",
+      "issueDate": "2026-02-13",
+      "maturityDate": "12-02-2027",
+      "rateType": "F",
+      "outstandingMln": 9350,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005580045",
+      "name": "BTP 2,95% 15.1.2024 - 15.2.2027",
+      "type": "BTP",
+      "issueDate": "2024-01-15",
+      "maturityDate": "15-02-2027",
+      "rateType": "F",
+      "outstandingMln": 17300,
+      "currentCoupon": 1.475
+    },
+    {
+      "isin": "IT0005633794",
+      "name": "BTP 2,55% 30.1.2025 - 25.2.2027",
+      "type": "BTP",
+      "issueDate": "2025-01-30",
+      "maturityDate": "25-02-2027",
+      "rateType": "F",
+      "outstandingMln": 17150,
+      "currentCoupon": 1.275
+    },
+    {
+      "isin": "IT0005699340",
+      "name": "BOT 364 gg 13.3.2026 - 12.3.2027",
+      "type": "BOT",
+      "issueDate": "2026-03-13",
+      "maturityDate": "12-03-2027",
+      "rateType": "F",
+      "outstandingMln": 8000,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005484552",
+      "name": "BTP 1,1% 1.3.2022 - 1.4.2027",
+      "type": "BTP",
+      "issueDate": "2022-03-01",
+      "maturityDate": "01-04-2027",
+      "rateType": "F",
+      "outstandingMln": 16650,
+      "currentCoupon": 0.55
+    },
+    {
+      "isin": "IT0005704447",
+      "name": "BOT 365 gg 14.4.2026 - 14.4.2027",
+      "type": "BOT",
+      "issueDate": "2026-04-14",
+      "maturityDate": "14-04-2027",
+      "rateType": "F",
+      "outstandingMln": 8250,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005709289",
+      "name": "BOT 365 gg 14.5.2026 - 14.5.2027",
+      "type": "BOT",
+      "issueDate": "2026-05-14",
+      "maturityDate": "14-05-2027",
+      "rateType": "F",
+      "outstandingMln": 9350,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005240830",
+      "name": "BTP 2,2% 1.2.2017 - 1.6.2027",
+      "type": "BTP",
+      "issueDate": "2017-02-01",
+      "maturityDate": "01-06-2027",
+      "rateType": "F",
+      "outstandingMln": 19870,
+      "currentCoupon": 1.1
+    },
+    {
+      "isin": "IT0005547390",
+      "name": "BTPVALORE 4% 13.6.2023 - 13.6.2027",
+      "type": "BTPVALORE",
+      "issueDate": "2023-06-13",
+      "maturityDate": "13-06-2027",
+      "rateType": "F",
+      "outstandingMln": 15287,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005547408",
+      "name": "BTPVALORE 4% 13.6.2023 - 13.6.2027",
+      "type": "BTPVALORE",
+      "issueDate": "2023-06-13",
+      "maturityDate": "13-06-2027",
+      "rateType": "F",
+      "outstandingMln": 2904,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005716714",
+      "name": "BOT 367 gg 12.6.2026 - 14.6.2027",
+      "type": "BOT",
+      "issueDate": "2026-06-12",
+      "maturityDate": "14-06-2027",
+      "rateType": "F",
+      "outstandingMln": 8500,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005722514",
+      "name": "BOT 365 gg 14.7.2026 - 14.7.2027",
+      "type": "BOT",
+      "issueDate": "2026-07-14",
+      "maturityDate": "14-07-2027",
+      "rateType": "F",
+      "outstandingMln": 8800,
+      "currentCoupon": "zero coupon"
+    },
+    {
+      "isin": "IT0005599904",
+      "name": "BTP 3,45% 17.6.2024 - 15.7.2027",
+      "type": "BTP",
+      "issueDate": "2024-06-17",
+      "maturityDate": "15-07-2027",
+      "rateType": "F",
+      "outstandingMln": 14121,
+      "currentCoupon": 1.725
+    },
+    {
+      "isin": "IT0005274805",
+      "name": "BTP 2,05% 4.7.2017 - 1.8.2027",
+      "type": "BTP",
+      "issueDate": "2017-07-04",
+      "maturityDate": "01-08-2027",
+      "rateType": "F",
+      "outstandingMln": 19363,
+      "currentCoupon": 1.025
+    },
+    {
+      "isin": "IT0005657330",
+      "name": "BTP 2,1% 27.6.2025 - 26.8.2027",
+      "type": "BTP",
+      "issueDate": "2025-06-27",
+      "maturityDate": "26-08-2027",
+      "rateType": "F",
+      "outstandingMln": 16876,
+      "currentCoupon": 1.05
+    },
+    {
+      "isin": "IT0005416570",
+      "name": "BTP 0,95% 16.7.2020 - 15.9.2027",
+      "type": "BTP",
+      "issueDate": "2020-07-16",
+      "maturityDate": "15-09-2027",
+      "rateType": "F",
+      "outstandingMln": 21907,
+      "currentCoupon": 0.475
+    },
+    {
+      "isin": "IT0005622128",
+      "name": "BTP 2,7% 15.11.2024 - 15.10.2027",
+      "type": "BTP",
+      "issueDate": "2024-11-15",
+      "maturityDate": "15-10-2027",
+      "rateType": "F",
+      "outstandingMln": 15400,
+      "currentCoupon": 1.35
+    },
+    {
+      "isin": "IT0005388167",
+      "name": "BTPITALIA 0,65% 28.10.2019 - 28.10.2027",
+      "type": "BTPITALIA",
+      "issueDate": "2019-10-28",
+      "maturityDate": "28-10-2027",
+      "rateType": "F",
+      "outstandingMln": 1140,
+      "currentCoupon": 0.325
+    },
+    {
+      "isin": "IT0005388175",
+      "name": "BTPITALIA 0,65% 28.10.2019 - 28.10.2027",
+      "type": "BTPITALIA",
+      "issueDate": "2019-10-28",
+      "maturityDate": "28-10-2027",
+      "rateType": "F",
+      "outstandingMln": 5567,
+      "currentCoupon": 0.325
+    },
+    {
+      "isin": "IT0001174611",
+      "name": "BTP 6,5% 1.11.1997 - 1.11.2027",
+      "type": "BTP",
+      "issueDate": "1997-11-01",
+      "maturityDate": "01-11-2027",
+      "rateType": "F",
+      "outstandingMln": 18613,
+      "currentCoupon": 3.25
+    },
+    {
+      "isin": "IT0005500068",
+      "name": "BTP 2,65% 4.7.2022 - 1.12.2027",
+      "type": "BTP",
+      "issueDate": "2022-07-04",
+      "maturityDate": "01-12-2027",
+      "rateType": "F",
+      "outstandingMln": 20600,
+      "currentCoupon": 1.325
+    },
+    {
+      "isin": "IT0005323032",
+      "name": "BTP 2% 1.2.2018 - 1.2.2028",
+      "type": "BTP",
+      "issueDate": "2018-02-01",
+      "maturityDate": "01-02-2028",
+      "rateType": "F",
+      "outstandingMln": 23740,
+      "currentCoupon": 1
+    },
+    {
+      "isin": "IT0005692410",
+      "name": "BTP 2,2% 29.1.2026 - 28.2.2028",
+      "type": "BTP",
+      "issueDate": "2026-01-29",
+      "maturityDate": "28-02-2028",
+      "rateType": "F",
+      "outstandingMln": 17400,
+      "currentCoupon": 1.1
+    },
+    {
+      "isin": "IT0005532715",
+      "name": "BTPITALIA 2% 14.3.2023 - 14.3.2028",
+      "type": "BTPITALIA",
+      "issueDate": "2023-03-14",
+      "maturityDate": "14-03-2028",
+      "rateType": "F",
+      "outstandingMln": 5971,
+      "currentCoupon": 1
+    },
+    {
+      "isin": "IT0005532723",
+      "name": "BTPITALIA 2% 14.3.2023 - 14.3.2028",
+      "type": "BTPITALIA",
+      "issueDate": "2023-03-14",
+      "maturityDate": "14-03-2028",
+      "rateType": "F",
+      "outstandingMln": 3945,
+      "currentCoupon": 1
+    },
+    {
+      "isin": "IT0005433690",
+      "name": "BTP 0,25% 18.1.2021 - 15.3.2028",
+      "type": "BTP",
+      "issueDate": "2021-01-18",
+      "maturityDate": "15-03-2028",
+      "rateType": "F",
+      "outstandingMln": 18704,
+      "currentCoupon": 0.125
+    },
+    {
+      "isin": "IT0005521981",
+      "name": "BTP 3,4% 30.11.2022 - 1.4.2028",
+      "type": "BTP",
+      "issueDate": "2022-11-30",
+      "maturityDate": "01-04-2028",
+      "rateType": "F",
+      "outstandingMln": 18300,
+      "currentCoupon": 1.7
+    },
+    {
+      "isin": "IT0005246134",
+      "name": "BTP ind. 1,3% 15.11.2016 - 15.5.2028",
+      "type": "BTPI",
+      "issueDate": "2016-11-15",
+      "maturityDate": "15-05-2028",
+      "rateType": "F",
+      "outstandingMln": 12503,
+      "currentCoupon": 0.65
+    },
+    {
+      "isin": "IT0005641029",
+      "name": "BTP 2,65% 17.3.2025 - 15.6.2028",
+      "type": "BTP",
+      "issueDate": "2025-03-17",
+      "maturityDate": "15-06-2028",
+      "rateType": "F",
+      "outstandingMln": 15941,
+      "currentCoupon": 1.325
+    },
+    {
+      "isin": "IT0005445306",
+      "name": "BTP 0,5% 17.5.2021 - 15.7.2028",
+      "type": "BTP",
+      "issueDate": "2021-05-17",
+      "maturityDate": "15-07-2028",
+      "rateType": "F",
+      "outstandingMln": 15744,
+      "currentCoupon": 0.25
+    },
+    {
+      "isin": "IT0005548315",
+      "name": "BTP 3,8% 1.6.2023 - 1.8.2028",
+      "type": "BTP",
+      "issueDate": "2023-06-01",
+      "maturityDate": "01-08-2028",
+      "rateType": "F",
+      "outstandingMln": 17606,
+      "currentCoupon": 1.9
+    },
+    {
+      "isin": "IT0004889033",
+      "name": "BTP 4,75% 22.1.2013 - 1.9.2028",
+      "type": "BTP",
+      "issueDate": "2013-01-22",
+      "maturityDate": "01-09-2028",
+      "rateType": "F",
+      "outstandingMln": 21784,
+      "currentCoupon": 2.375
+    },
+    {
+      "isin": "IT0005565392",
+      "name": "BTPVALORE 2,25% 10.10.2023 - 10.10.2028",
+      "type": "BTPVALORE",
+      "issueDate": "2023-10-10",
+      "maturityDate": "10-10-2028",
+      "rateType": "F",
+      "outstandingMln": 15116,
+      "currentCoupon": 1.025
+    },
+    {
+      "isin": "IT0005565400",
+      "name": "BTPVALORE 2,25% 10.10.2023 - 10.10.2028",
+      "type": "BTPVALORE",
+      "issueDate": "2023-10-10",
+      "maturityDate": "10-10-2028",
+      "rateType": "F",
+      "outstandingMln": 2074,
+      "currentCoupon": 1.025
+    },
+    {
+      "isin": "IT0005534984",
+      "name": "CCTEU 15.10.2022 - 15.10.2028",
+      "type": "CCTEU",
+      "issueDate": "2022-10-15",
+      "maturityDate": "15-10-2028",
+      "rateType": "V",
+      "outstandingMln": 13130,
+      "currentCoupon": 1.645
+    },
+    {
+      "isin": "IT0005425753",
+      "name": "BTPFUTURA 1% 17.11.2020 - 17.11.2028",
+      "type": "BTPFUTURA",
+      "issueDate": "2020-11-17",
+      "maturityDate": "17-11-2028",
+      "rateType": "F",
+      "outstandingMln": 3008,
+      "currentCoupon": 0.3
+    },
+    {
+      "isin": "IT0005425761",
+      "name": "BTPFUTURA 1% 17.11.2020 - 17.11.2028",
+      "type": "BTPFUTURA",
+      "issueDate": "2020-11-17",
+      "maturityDate": "17-11-2028",
+      "rateType": "F",
+      "outstandingMln": 2703,
+      "currentCoupon": 0.3
+    },
+    {
+      "isin": "IT0005517187",
+      "name": "BTPITALIA 1,6% 22.11.2022 - 22.11.2028",
+      "type": "BTPITALIA",
+      "issueDate": "2022-11-22",
+      "maturityDate": "22-11-2028",
+      "rateType": "F",
+      "outstandingMln": 4830,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005517195",
+      "name": "BTPITALIA 1,6% 22.11.2022 - 22.11.2028",
+      "type": "BTPITALIA",
+      "issueDate": "2022-11-22",
+      "maturityDate": "22-11-2028",
+      "rateType": "F",
+      "outstandingMln": 7164,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005340929",
+      "name": "BTP 2,8% 1.8.2018 - 1.12.2028",
+      "type": "BTP",
+      "issueDate": "2018-08-01",
+      "maturityDate": "01-12-2028",
+      "rateType": "F",
+      "outstandingMln": 23868,
+      "currentCoupon": 1.4
+    },
+    {
+      "isin": "IT0005660052",
+      "name": "BTP 2,35% 15.7.2025 - 15.1.2029",
+      "type": "BTP",
+      "issueDate": "2025-07-15",
+      "maturityDate": "15-01-2029",
+      "rateType": "F",
+      "outstandingMln": 16470,
+      "currentCoupon": 1.175
+    },
+    {
+      "isin": "IT0005566408",
+      "name": "BTP 4,1% 2.10.2023 - 1.2.2029",
+      "type": "BTP",
+      "issueDate": "2023-10-02",
+      "maturityDate": "01-02-2029",
+      "rateType": "F",
+      "outstandingMln": 17602,
+      "currentCoupon": 2.05
+    },
+    {
+      "isin": "IT0005467482",
+      "name": "BTP 0,45% 15.11.2021 - 15.2.2029",
+      "type": "BTP",
+      "issueDate": "2021-11-15",
+      "maturityDate": "15-02-2029",
+      "rateType": "F",
+      "outstandingMln": 17150,
+      "currentCoupon": 0.225
+    },
+    {
+      "isin": "IT0005689960",
+      "name": "BTP 2,4% 15.1.2026 - 15.3.2029",
+      "type": "BTP",
+      "issueDate": "2026-01-15",
+      "maturityDate": "15-03-2029",
+      "rateType": "F",
+      "outstandingMln": 17500,
+      "currentCoupon": 1.2
+    },
+    {
+      "isin": "IT0005451361",
+      "name": "CCTEU 15.4.2021 - 15.4.2029",
+      "type": "CCTEU",
+      "issueDate": "2021-04-15",
+      "maturityDate": "15-04-2029",
+      "rateType": "V",
+      "outstandingMln": 20891,
+      "currentCoupon": 1.569
+    },
+    {
+      "isin": "IT0005543803",
+      "name": "BTP ind. 1,5% 26.4.2023 - 15.5.2029",
+      "type": "BTPI",
+      "issueDate": "2023-04-26",
+      "maturityDate": "15-05-2029",
+      "rateType": "F",
+      "outstandingMln": 18075,
+      "currentCoupon": 0.75
+    },
+    {
+      "isin": "IT0005495731",
+      "name": "BTP 2,8% 16.5.2022 - 15.6.2029",
+      "type": "BTP",
+      "issueDate": "2022-05-16",
+      "maturityDate": "15-06-2029",
+      "rateType": "F",
+      "outstandingMln": 16800,
+      "currentCoupon": 1.4
+    },
+    {
+      "isin": "IT0005584849",
+      "name": "BTP 3,35% 1.3.2024 - 1.7.2029",
+      "type": "BTP",
+      "issueDate": "2024-03-01",
+      "maturityDate": "01-07-2029",
+      "rateType": "F",
+      "outstandingMln": 19100,
+      "currentCoupon": 1.675
+    },
+    {
+      "isin": "IT0005365165",
+      "name": "BTP 3% 1.2.2019 - 1.8.2029",
+      "type": "BTP",
+      "issueDate": "2019-02-01",
+      "maturityDate": "01-08-2029",
+      "rateType": "F",
+      "outstandingMln": 23967,
+      "currentCoupon": 1.5
+    },
+    {
+      "isin": "IT0005716839",
+      "name": "BTP 3% 15.6.2026 - 15.9.2029",
+      "type": "BTP",
+      "issueDate": "2026-06-15",
+      "maturityDate": "15-09-2029",
+      "rateType": "F",
+      "outstandingMln": 7700,
+      "currentCoupon": 0.75
+    },
+    {
+      "isin": "IT0005611055",
+      "name": "BTP 3% 2.9.2024 - 1.10.2029",
+      "type": "BTP",
+      "issueDate": "2024-09-02",
+      "maturityDate": "01-10-2029",
+      "rateType": "F",
+      "outstandingMln": 17400,
+      "currentCoupon": 1.5
+    },
+    {
+      "isin": "IT0001278511",
+      "name": "BTP 5,25% 1.11.1998 - 1.11.2029",
+      "type": "BTP",
+      "issueDate": "1998-11-01",
+      "maturityDate": "01-11-2029",
+      "rateType": "F",
+      "outstandingMln": 22478,
+      "currentCoupon": 2.625
+    },
+    {
+      "isin": "IT0005519787",
+      "name": "BTP 3,85% 15.11.2022 - 15.12.2029",
+      "type": "BTP",
+      "issueDate": "2022-11-15",
+      "maturityDate": "15-12-2029",
+      "rateType": "F",
+      "outstandingMln": 23346,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0005024234",
+      "name": "BTP 3,5% 1.3.2014 - 1.3.2030",
+      "type": "BTP",
+      "issueDate": "2014-03-01",
+      "maturityDate": "01-03-2030",
+      "rateType": "F",
+      "outstandingMln": 19100,
+      "currentCoupon": 1.75
+    },
+    {
+      "isin": "IT0005583478",
+      "name": "BTPVALORE 2% 5.3.2024 - 5.3.2030",
+      "type": "BTPVALORE",
+      "issueDate": "2024-03-05",
+      "maturityDate": "05-03-2030",
+      "rateType": "F",
+      "outstandingMln": 16074,
+      "currentCoupon": 0.813
+    },
+    {
+      "isin": "IT0005583486",
+      "name": "BTPVALORE 2% 5.3.2024 - 5.3.2030",
+      "type": "BTPVALORE",
+      "issueDate": "2024-03-05",
+      "maturityDate": "05-03-2030",
+      "rateType": "F",
+      "outstandingMln": 2242,
+      "currentCoupon": 0.813
+    },
+    {
+      "isin": "IT0005383309",
+      "name": "BTP 1,35% 1.9.2019 - 1.4.2030",
+      "type": "BTP",
+      "issueDate": "2019-09-01",
+      "maturityDate": "01-04-2030",
+      "rateType": "F",
+      "outstandingMln": 25259,
+      "currentCoupon": 0.675
+    },
+    {
+      "isin": "IT0005594483",
+      "name": "BTPVALORE 1,95% 14.5.2024 - 14.5.2030",
+      "type": "BTPVALORE",
+      "issueDate": "2024-05-14",
+      "maturityDate": "14-05-2030",
+      "rateType": "F",
+      "outstandingMln": 1343,
+      "currentCoupon": 0.838
+    },
+    {
+      "isin": "IT0005594491",
+      "name": "BTPVALORE 1,95% 14.5.2024 - 14.5.2030",
+      "type": "BTPVALORE",
+      "issueDate": "2024-05-14",
+      "maturityDate": "14-05-2030",
+      "rateType": "F",
+      "outstandingMln": 9883,
+      "currentCoupon": 0.838
+    },
+    {
+      "isin": "IT0005387052",
+      "name": "BTP ind. 0,4% 15.5.2019 - 15.5.2030",
+      "type": "BTPI",
+      "issueDate": "2019-05-15",
+      "maturityDate": "15-05-2030",
+      "rateType": "F",
+      "outstandingMln": 15808,
+      "currentCoupon": 0.2
+    },
+    {
+      "isin": "IT0005542797",
+      "name": "BTP 3,7% 17.4.2023 - 15.6.2030",
+      "type": "BTP",
+      "issueDate": "2023-04-17",
+      "maturityDate": "15-06-2030",
+      "rateType": "F",
+      "outstandingMln": 16318,
+      "currentCoupon": 1.85
+    },
+    {
+      "isin": "IT0005496994",
+      "name": "BTPITALIA 1,6% 28.6.2022 - 28.6.2030",
+      "type": "BTPITALIA",
+      "issueDate": "2022-06-28",
+      "maturityDate": "28-06-2030",
+      "rateType": "F",
+      "outstandingMln": 4799,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005497000",
+      "name": "BTPITALIA 1,6% 28.6.2022 - 28.6.2030",
+      "type": "BTPITALIA",
+      "issueDate": "2022-06-28",
+      "maturityDate": "28-06-2030",
+      "rateType": "F",
+      "outstandingMln": 4641,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005637399",
+      "name": "BTP 2,95% 3.3.2025 - 1.7.2030",
+      "type": "BTP",
+      "issueDate": "2025-03-03",
+      "maturityDate": "01-07-2030",
+      "rateType": "F",
+      "outstandingMln": 18075,
+      "currentCoupon": 1.475
+    },
+    {
+      "isin": "IT0005415283",
+      "name": "BTPFUTURA 1,45% 14.7.2020 - 14.7.2030",
+      "type": "BTPFUTURA",
+      "issueDate": "2020-07-14",
+      "maturityDate": "14-07-2030",
+      "rateType": "F",
+      "outstandingMln": 3217,
+      "currentCoupon": 0.65
+    },
+    {
+      "isin": "IT0005415291",
+      "name": "BTPFUTURA 1,45% 14.7.2020 - 14.7.2030",
+      "type": "BTPFUTURA",
+      "issueDate": "2020-07-14",
+      "maturityDate": "14-07-2030",
+      "rateType": "F",
+      "outstandingMln": 2915,
+      "currentCoupon": 0.65
+    },
+    {
+      "isin": "IT0005403396",
+      "name": "BTP 0,95% 1.3.2020 - 1.8.2030",
+      "type": "BTP",
+      "issueDate": "2020-03-01",
+      "maturityDate": "01-08-2030",
+      "rateType": "F",
+      "outstandingMln": 18895,
+      "currentCoupon": 0.475
+    },
+    {
+      "isin": "IT0005654642",
+      "name": "BTP 2,7% 11.6.2025 - 1.10.2030",
+      "type": "BTP",
+      "issueDate": "2025-06-11",
+      "maturityDate": "01-10-2030",
+      "rateType": "F",
+      "outstandingMln": 19450,
+      "currentCoupon": 1.35
+    },
+    {
+      "isin": "IT0005491250",
+      "name": "CCTEU 15.10.2021 - 15.10.2030",
+      "type": "CCTEU",
+      "issueDate": "2021-10-15",
+      "maturityDate": "15-10-2030",
+      "rateType": "V",
+      "outstandingMln": 17577,
+      "currentCoupon": 1.62
+    },
+    {
+      "isin": "IT0005561888",
+      "name": "BTP 4% 15.9.2023 - 15.11.2030",
+      "type": "BTP",
+      "issueDate": "2023-09-15",
+      "maturityDate": "15-11-2030",
+      "rateType": "F",
+      "outstandingMln": 17423,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005413171",
+      "name": "BTP 1,65% 1.6.2020 - 1.12.2030",
+      "type": "BTP",
+      "issueDate": "2020-06-01",
+      "maturityDate": "01-12-2030",
+      "rateType": "F",
+      "outstandingMln": 24108,
+      "currentCoupon": 0.825
+    },
+    {
+      "isin": "IT0005671273",
+      "name": "BTP 2,85% 1.10.2025 - 1.2.2031",
+      "type": "BTP",
+      "issueDate": "2025-10-01",
+      "maturityDate": "01-02-2031",
+      "rateType": "F",
+      "outstandingMln": 20600,
+      "currentCoupon": 1.425
+    },
+    {
+      "isin": "IT0005580094",
+      "name": "BTP 3,5% 16.1.2024 - 15.2.2031",
+      "type": "BTP",
+      "issueDate": "2024-01-16",
+      "maturityDate": "15-02-2031",
+      "rateType": "F",
+      "outstandingMln": 19000,
+      "currentCoupon": 1.75
+    },
+    {
+      "isin": "IT0005422891",
+      "name": "BTP 0,9% 1.10.2020 - 1.4.2031",
+      "type": "BTP",
+      "issueDate": "2020-10-01",
+      "maturityDate": "01-04-2031",
+      "rateType": "F",
+      "outstandingMln": 25950,
+      "currentCoupon": 0.45
+    },
+    {
+      "isin": "IT0001444378",
+      "name": "BTP 6% 1.11.1999 - 1.5.2031",
+      "type": "BTP",
+      "issueDate": "1999-11-01",
+      "maturityDate": "01-05-2031",
+      "rateType": "F",
+      "outstandingMln": 32255,
+      "currentCoupon": 3
+    },
+    {
+      "isin": "IT0005707614",
+      "name": "BTP 3,15% 4.5.2026 - 1.6.2031",
+      "type": "BTP",
+      "issueDate": "2026-05-04",
+      "maturityDate": "01-06-2031",
+      "rateType": "F",
+      "outstandingMln": 12400,
+      "currentCoupon": 1.575
+    },
+    {
+      "isin": "IT0005713539",
+      "name": "BTPITALIA 1,6% 23.6.2026 - 23.6.2031",
+      "type": "BTPITALIA",
+      "issueDate": "2026-06-23",
+      "maturityDate": "23-06-2031",
+      "rateType": "F",
+      "outstandingMln": 8700,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005713547",
+      "name": "BTPITALIA 1,6% 23.6.2026 - 23.6.2031",
+      "type": "BTPITALIA",
+      "issueDate": "2026-06-23",
+      "maturityDate": "23-06-2031",
+      "rateType": "F",
+      "outstandingMln": 143,
+      "currentCoupon": 0.8
+    },
+    {
+      "isin": "IT0005595803",
+      "name": "BTP 3,45% 15.5.2024 - 15.7.2031",
+      "type": "BTP",
+      "issueDate": "2024-05-15",
+      "maturityDate": "15-07-2031",
+      "rateType": "F",
+      "outstandingMln": 19200,
+      "currentCoupon": 1.725
+    },
+    {
+      "isin": "IT0005436693",
+      "name": "BTP 0,6% 1.2.2021 - 1.8.2031",
+      "type": "BTP",
+      "issueDate": "2021-02-01",
+      "maturityDate": "01-08-2031",
+      "rateType": "F",
+      "outstandingMln": 21300,
+      "currentCoupon": 0.3
+    },
+    {
+      "isin": "IT0005657348",
+      "name": "BTP ind. 1,1% 27.6.2025 - 15.8.2031",
+      "type": "BTPI",
+      "issueDate": "2025-06-27",
+      "maturityDate": "15-08-2031",
+      "rateType": "F",
+      "outstandingMln": 12675,
+      "currentCoupon": 0.55
+    },
+    {
+      "isin": "IT0005554982",
+      "name": "CCTEU 15.4.2023 - 15.10.2031",
+      "type": "CCTEU",
+      "issueDate": "2023-04-15",
+      "maturityDate": "15-10-2031",
+      "rateType": "V",
+      "outstandingMln": 12875,
+      "currentCoupon": 1.823
+    },
+    {
+      "isin": "IT0005542359",
+      "name": "BTPGREEN 4% 13.4.2023 - 30.10.2031",
+      "type": "BTPGREEN",
+      "issueDate": "2023-04-13",
+      "maturityDate": "30-10-2031",
+      "rateType": "F",
+      "outstandingMln": 13026,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005619546",
+      "name": "BTP 3,15% 29.10.2024 - 15.11.2031",
+      "type": "BTP",
+      "issueDate": "2024-10-29",
+      "maturityDate": "15-11-2031",
+      "rateType": "F",
+      "outstandingMln": 21100,
+      "currentCoupon": 1.575
+    },
+    {
+      "isin": "IT0005449969",
+      "name": "BTP 0,95% 1.6.2021 - 1.12.2031",
+      "type": "BTP",
+      "issueDate": "2021-06-01",
+      "maturityDate": "01-12-2031",
+      "rateType": "F",
+      "outstandingMln": 20515,
+      "currentCoupon": 0.475
+    },
+    {
+      "isin": "IT0005094088",
+      "name": "BTP 1,65% 1.3.2015 - 1.3.2032",
+      "type": "BTP",
+      "issueDate": "2015-03-01",
+      "maturityDate": "01-03-2032",
+      "rateType": "F",
+      "outstandingMln": 27452,
+      "currentCoupon": 0.825
+    },
+    {
+      "isin": "IT0005696320",
+      "name": "BTPVALORE 1,9% 10.3.2026 - 10.3.2032",
+      "type": "BTPVALORE",
+      "issueDate": "2026-03-10",
+      "maturityDate": "10-03-2032",
+      "rateType": "F",
+      "outstandingMln": 15892,
+      "currentCoupon": 0.65
+    },
+    {
+      "isin": "IT0005594467",
+      "name": "CCTEU 15.4.2024 - 15.4.2032",
+      "type": "CCTEU",
+      "issueDate": "2024-04-15",
+      "maturityDate": "15-04-2032",
+      "rateType": "V",
+      "outstandingMln": 13530,
+      "currentCoupon": 1.773
+    },
+    {
+      "isin": "IT0005466013",
+      "name": "BTP 0,95% 1.11.2021 - 1.6.2032",
+      "type": "BTP",
+      "issueDate": "2021-11-01",
+      "maturityDate": "01-06-2032",
+      "rateType": "F",
+      "outstandingMln": 22600,
+      "currentCoupon": 0.475
+    },
+    {
+      "isin": "IT0005648248",
+      "name": "BTPITALIA 1,85% 4.6.2025 - 4.6.2032",
+      "type": "BTPITALIA",
+      "issueDate": "2025-06-04",
+      "maturityDate": "04-06-2032",
+      "rateType": "F",
+      "outstandingMln": 5678,
+      "currentCoupon": 0.925
+    },
+    {
+      "isin": "IT0005648255",
+      "name": "BTPITALIA 1,85% 4.6.2025 - 4.6.2032",
+      "type": "BTPITALIA",
+      "issueDate": "2025-06-04",
+      "maturityDate": "04-06-2032",
+      "rateType": "F",
+      "outstandingMln": 3112,
+      "currentCoupon": 0.925
+    },
+    {
+      "isin": "IT0005647265",
+      "name": "BTP 3,25% 25.4.2025 - 15.7.2032",
+      "type": "BTP",
+      "issueDate": "2025-04-25",
+      "maturityDate": "15-07-2032",
+      "rateType": "F",
+      "outstandingMln": 20117,
+      "currentCoupon": 1.625
+    },
+    {
+      "isin": "IT0005138828",
+      "name": "BTP ind. 1,25% 15.9.2015 - 15.9.2032",
+      "type": "BTPI",
+      "issueDate": "2015-09-15",
+      "maturityDate": "15-09-2032",
+      "rateType": "F",
+      "outstandingMln": 15757,
+      "currentCoupon": 0.625
+    },
+    {
+      "isin": "IT0005672016",
+      "name": "BTPVALORE 2% 28.10.2025 - 28.10.2032",
+      "type": "BTPVALORE",
+      "issueDate": "2025-10-28",
+      "maturityDate": "28-10-2032",
+      "rateType": "F",
+      "outstandingMln": 15693,
+      "currentCoupon": 0.65
+    },
+    {
+      "isin": "IT0005668220",
+      "name": "BTP 3,25% 9.9.2025 - 15.11.2032",
+      "type": "BTP",
+      "issueDate": "2025-09-09",
+      "maturityDate": "15-11-2032",
+      "rateType": "F",
+      "outstandingMln": 18700,
+      "currentCoupon": 1.625
+    },
+    {
+      "isin": "IT0005494239",
+      "name": "BTP 2,5% 3.5.2022 - 1.12.2032",
+      "type": "BTP",
+      "issueDate": "2022-05-03",
+      "maturityDate": "01-12-2032",
+      "rateType": "F",
+      "outstandingMln": 23188,
+      "currentCoupon": 1.25
+    },
+    {
+      "isin": "IT0003256820",
+      "name": "BTP 5,75% 1.2.2002 - 1.2.2033",
+      "type": "BTP",
+      "issueDate": "2002-02-01",
+      "maturityDate": "01-02-2033",
+      "rateType": "F",
+      "outstandingMln": 20761,
+      "currentCoupon": 2.875
+    },
+    {
+      "isin": "IT0005634792",
+      "name": "BTPVALORE 1,85% 25.2.2025 - 25.2.2033",
+      "type": "BTPVALORE",
+      "issueDate": "2025-02-25",
+      "maturityDate": "25-02-2033",
+      "rateType": "F",
+      "outstandingMln": 13799,
+      "currentCoupon": 0.713
+    },
+    {
+      "isin": "IT0005634800",
+      "name": "BTPVALORE 1,85% 25.2.2025 - 25.2.2033",
+      "type": "BTPVALORE",
+      "issueDate": "2025-02-25",
+      "maturityDate": "25-02-2033",
+      "rateType": "F",
+      "outstandingMln": 1106,
+      "currentCoupon": 0.713
+    },
+    {
+      "isin": "IT0005689994",
+      "name": "BTP 3,15% 15.1.2026 - 15.3.2033",
+      "type": "BTP",
+      "issueDate": "2026-01-15",
+      "maturityDate": "15-03-2033",
+      "rateType": "F",
+      "outstandingMln": 19300,
+      "currentCoupon": 1.575
+    },
+    {
+      "isin": "IT0005620460",
+      "name": "CCTEU 15.10.2024 - 15.4.2033",
+      "type": "CCTEU",
+      "issueDate": "2024-10-15",
+      "maturityDate": "15-04-2033",
+      "rateType": "V",
+      "outstandingMln": 12610,
+      "currentCoupon": 1.798
+    },
+    {
+      "isin": "IT0005518128",
+      "name": "BTP 4,4% 1.11.2022 - 1.5.2033",
+      "type": "BTP",
+      "issueDate": "2022-11-01",
+      "maturityDate": "01-05-2033",
+      "rateType": "F",
+      "outstandingMln": 21350,
+      "currentCoupon": 2.2
+    },
+    {
+      "isin": "IT0005482994",
+      "name": "BTP ind. 0,1% 15.11.2021 - 15.5.2033",
+      "type": "BTPI",
+      "issueDate": "2021-11-15",
+      "maturityDate": "15-05-2033",
+      "rateType": "F",
+      "outstandingMln": 19743,
+      "currentCoupon": 0.05
+    },
+    {
+      "isin": "IT0005704868",
+      "name": "BTP 3,3% 15.4.2026 - 15.6.2033",
+      "type": "BTP",
+      "issueDate": "2026-04-15",
+      "maturityDate": "15-06-2033",
+      "rateType": "F",
+      "outstandingMln": 20650,
+      "currentCoupon": 1.65
+    },
+    {
+      "isin": "IT0005240350",
+      "name": "BTP 2,45% 1.9.2016 - 1.9.2033",
+      "type": "BTP",
+      "issueDate": "2016-09-01",
+      "maturityDate": "01-09-2033",
+      "rateType": "F",
+      "outstandingMln": 22877,
+      "currentCoupon": 1.225
+    },
+    {
+      "isin": "IT0005722845",
+      "name": "BTP 3,35% 15.7.2026 - 15.9.2033",
+      "type": "BTP",
+      "issueDate": "2026-07-15",
+      "maturityDate": "15-09-2033",
+      "rateType": "F",
+      "outstandingMln": 3500,
+      "currentCoupon": 0.564
+    },
+    {
+      "isin": "IT0005544082",
+      "name": "BTP 4,35% 2.5.2023 - 1.11.2033",
+      "type": "BTP",
+      "issueDate": "2023-05-02",
+      "maturityDate": "01-11-2033",
+      "rateType": "F",
+      "outstandingMln": 21200,
+      "currentCoupon": 2.175
+    },
+    {
+      "isin": "IT0005466344",
+      "name": "BTPFUTURA 1,7% 16.11.2021 - 16.11.2033",
+      "type": "BTPFUTURA",
+      "issueDate": "2021-11-16",
+      "maturityDate": "16-11-2033",
+      "rateType": "F",
+      "outstandingMln": 2608,
+      "currentCoupon": 0.675
+    },
+    {
+      "isin": "IT0005466351",
+      "name": "BTPFUTURA 1,7% 16.11.2021 - 16.11.2033",
+      "type": "BTPFUTURA",
+      "issueDate": "2021-11-16",
+      "maturityDate": "16-11-2033",
+      "rateType": "F",
+      "outstandingMln": 660,
+      "currentCoupon": 0.675
+    },
+    {
+      "isin": "IT0005560948",
+      "name": "BTP 4,2% 1.9.2023 - 1.3.2034",
+      "type": "BTP",
+      "issueDate": "2023-09-01",
+      "maturityDate": "01-03-2034",
+      "rateType": "F",
+      "outstandingMln": 20174,
+      "currentCoupon": 2.1
+    },
+    {
+      "isin": "IT0005652828",
+      "name": "CCTEU 15.4.2025 - 15.4.2034",
+      "type": "CCTEU",
+      "issueDate": "2025-04-15",
+      "maturityDate": "15-04-2034",
+      "rateType": "V",
+      "outstandingMln": 12563,
+      "currentCoupon": 1.773
+    },
+    {
+      "isin": "IT0005584856",
+      "name": "BTP 3,85% 1.3.2024 - 1.7.2034",
+      "type": "BTP",
+      "issueDate": "2024-03-01",
+      "maturityDate": "01-07-2034",
+      "rateType": "F",
+      "outstandingMln": 19522,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0003535157",
+      "name": "BTP 5% 1.8.2003 - 1.8.2034",
+      "type": "BTP",
+      "issueDate": "2003-08-01",
+      "maturityDate": "01-08-2034",
+      "rateType": "F",
+      "outstandingMln": 25111,
+      "currentCoupon": 2.5
+    },
+    {
+      "isin": "IT0005607970",
+      "name": "BTP 3,85% 1.8.2024 - 1.2.2035",
+      "type": "BTP",
+      "issueDate": "2024-08-01",
+      "maturityDate": "01-02-2035",
+      "rateType": "F",
+      "outstandingMln": 21900,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0005358806",
+      "name": "BTP 3,35% 1.9.2018 - 1.3.2035",
+      "type": "BTP",
+      "issueDate": "2018-09-01",
+      "maturityDate": "01-03-2035",
+      "rateType": "F",
+      "outstandingMln": 24404,
+      "currentCoupon": 1.675
+    },
+    {
+      "isin": "IT0005680753",
+      "name": "CCTEU 15.10.2025 - 15.4.2035",
+      "type": "CCTEU",
+      "issueDate": "2025-10-15",
+      "maturityDate": "15-04-2035",
+      "rateType": "V",
+      "outstandingMln": 14661,
+      "currentCoupon": 1.645
+    },
+    {
+      "isin": "IT0005508590",
+      "name": "BTPGREEN 4% 30.4.2022 - 30.4.2035",
+      "type": "BTPGREEN",
+      "issueDate": "2022-04-30",
+      "maturityDate": "30-04-2035",
+      "rateType": "F",
+      "outstandingMln": 14530,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005631590",
+      "name": "BTP 3,65% 15.1.2025 - 1.8.2035",
+      "type": "BTP",
+      "issueDate": "2025-01-15",
+      "maturityDate": "01-08-2035",
+      "rateType": "F",
+      "outstandingMln": 21373,
+      "currentCoupon": 1.825
+    },
+    {
+      "isin": "IT0003745541",
+      "name": "BTP ind. 2,35% 15.9.2004 - 15.9.2035",
+      "type": "BTPI",
+      "issueDate": "2004-09-15",
+      "maturityDate": "15-09-2035",
+      "rateType": "F",
+      "outstandingMln": 13077,
+      "currentCoupon": 1.175
+    },
+    {
+      "isin": "IT0005648149",
+      "name": "BTP 3,6% 2.5.2025 - 1.10.2035",
+      "type": "BTP",
+      "issueDate": "2025-05-02",
+      "maturityDate": "01-10-2035",
+      "rateType": "F",
+      "outstandingMln": 20524,
+      "currentCoupon": 1.8
+    },
+    {
+      "isin": "IT0005676504",
+      "name": "BTP 3,45% 3.11.2025 - 1.2.2036",
+      "type": "BTP",
+      "issueDate": "2025-11-03",
+      "maturityDate": "01-02-2036",
+      "rateType": "F",
+      "outstandingMln": 22827,
+      "currentCoupon": 1.725
+    },
+    {
+      "isin": "IT0005402117",
+      "name": "BTP 1,45% 18.2.2020 - 1.3.2036",
+      "type": "BTP",
+      "issueDate": "2020-02-18",
+      "maturityDate": "01-03-2036",
+      "rateType": "F",
+      "outstandingMln": 15400,
+      "currentCoupon": 0.725
+    },
+    {
+      "isin": "IT0005707689",
+      "name": "CCTEU 15.4.2026 - 15.4.2036",
+      "type": "CCTEU",
+      "issueDate": "2026-04-15",
+      "maturityDate": "15-04-2036",
+      "rateType": "V",
+      "outstandingMln": 9024,
+      "currentCoupon": 1.645
+    },
+    {
+      "isin": "IT0005588881",
+      "name": "BTP ind. 1,8% 15.11.2023 - 15.5.2036",
+      "type": "BTPI",
+      "issueDate": "2023-11-15",
+      "maturityDate": "15-05-2036",
+      "rateType": "F",
+      "outstandingMln": 15788,
+      "currentCoupon": 0.9
+    },
+    {
+      "isin": "IT0005706285",
+      "name": "BTP 3,8% 22.4.2026 - 1.7.2036",
+      "type": "BTP",
+      "issueDate": "2026-04-22",
+      "maturityDate": "01-07-2036",
+      "rateType": "F",
+      "outstandingMln": 19500,
+      "currentCoupon": 1.9
+    },
+    {
+      "isin": "IT0005177909",
+      "name": "BTP 2,25% 1.3.2016 - 1.9.2036",
+      "type": "BTP",
+      "issueDate": "2016-03-01",
+      "maturityDate": "01-09-2036",
+      "rateType": "F",
+      "outstandingMln": 18678,
+      "currentCoupon": 1.125
+    },
+    {
+      "isin": "IT0003934657",
+      "name": "BTP 4% 1.8.2005 - 1.2.2037",
+      "type": "BTP",
+      "issueDate": "2005-08-01",
+      "maturityDate": "01-02-2037",
+      "rateType": "F",
+      "outstandingMln": 34219,
+      "currentCoupon": 2
+    },
+    {
+      "isin": "IT0005433195",
+      "name": "BTP 0,95% 12.1.2021 - 1.3.2037",
+      "type": "BTP",
+      "issueDate": "2021-01-12",
+      "maturityDate": "01-03-2037",
+      "rateType": "F",
+      "outstandingMln": 18032,
+      "currentCoupon": 0.475
+    },
+    {
+      "isin": "IT0005442089",
+      "name": "BTPFUTURA 2% 27.4.2021 - 27.4.2037",
+      "type": "BTPFUTURA",
+      "issueDate": "2021-04-27",
+      "maturityDate": "27-04-2037",
+      "rateType": "F",
+      "outstandingMln": 3934,
+      "currentCoupon": 0.6
+    },
+    {
+      "isin": "IT0005442097",
+      "name": "BTPFUTURA 2% 27.4.2021 - 27.4.2037",
+      "type": "BTPFUTURA",
+      "issueDate": "2021-04-27",
+      "maturityDate": "27-04-2037",
+      "rateType": "F",
+      "outstandingMln": 1543,
+      "currentCoupon": 0.6
+    },
+    {
+      "isin": "IT0005596470",
+      "name": "BTPGREEN 4,05% 30.4.2024 - 30.10.2037",
+      "type": "BTPGREEN",
+      "issueDate": "2024-04-30",
+      "maturityDate": "30-10-2037",
+      "rateType": "F",
+      "outstandingMln": 14000,
+      "currentCoupon": 2.025
+    },
+    {
+      "isin": "IT0005496770",
+      "name": "BTP 3,25% 1.3.2022 - 1.3.2038",
+      "type": "BTP",
+      "issueDate": "2022-03-01",
+      "maturityDate": "01-03-2038",
+      "rateType": "F",
+      "outstandingMln": 17563,
+      "currentCoupon": 1.625
+    },
+    {
+      "isin": "IT0005321325",
+      "name": "BTP 2,95% 1.9.2017 - 1.9.2038",
+      "type": "BTP",
+      "issueDate": "2017-09-01",
+      "maturityDate": "01-09-2038",
+      "rateType": "F",
+      "outstandingMln": 17464,
+      "currentCoupon": 1.475
+    },
+    {
+      "isin": "IT0005547812",
+      "name": "BTP ind. 2,4% 15.5.2023 - 15.5.2039",
+      "type": "BTPI",
+      "issueDate": "2023-05-15",
+      "maturityDate": "15-05-2039",
+      "rateType": "F",
+      "outstandingMln": 13400,
+      "currentCoupon": 1.2
+    },
+    {
+      "isin": "IT0004286966",
+      "name": "BTP 5% 1.8.2007 - 1.8.2039",
+      "type": "BTP",
+      "issueDate": "2007-08-01",
+      "maturityDate": "01-08-2039",
+      "rateType": "F",
+      "outstandingMln": 22520,
+      "currentCoupon": 2.5
+    },
+    {
+      "isin": "IT0005582421",
+      "name": "BTP 4,15% 1.10.2023 - 1.10.2039",
+      "type": "BTP",
+      "issueDate": "2023-10-01",
+      "maturityDate": "01-10-2039",
+      "rateType": "F",
+      "outstandingMln": 16600,
+      "currentCoupon": 2.075
+    },
+    {
+      "isin": "IT0005377152",
+      "name": "BTP 3,1% 1.3.2019 - 1.3.2040",
+      "type": "BTP",
+      "issueDate": "2019-03-01",
+      "maturityDate": "01-03-2040",
+      "rateType": "F",
+      "outstandingMln": 14220,
+      "currentCoupon": 1.55
+    },
+    {
+      "isin": "IT0004532559",
+      "name": "BTP 5% 1.9.2009 - 1.9.2040",
+      "type": "BTP",
+      "issueDate": "2009-09-01",
+      "maturityDate": "01-09-2040",
+      "rateType": "F",
+      "outstandingMln": 25352,
+      "currentCoupon": 2.5
+    },
+    {
+      "isin": "IT0005635583",
+      "name": "BTP 3,85% 18.2.2025 - 1.10.2040",
+      "type": "BTP",
+      "issueDate": "2025-02-18",
+      "maturityDate": "01-10-2040",
+      "rateType": "F",
+      "outstandingMln": 16850,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0005421703",
+      "name": "BTP 1,8% 15.9.2020 - 1.3.2041",
+      "type": "BTP",
+      "issueDate": "2020-09-15",
+      "maturityDate": "01-03-2041",
+      "rateType": "F",
+      "outstandingMln": 17600,
+      "currentCoupon": 0.9
+    },
+    {
+      "isin": "IT0004545890",
+      "name": "BTP ind. 2,55% 15.9.2009 - 15.9.2041",
+      "type": "BTPI",
+      "issueDate": "2009-09-15",
+      "maturityDate": "15-09-2041",
+      "rateType": "F",
+      "outstandingMln": 15837,
+      "currentCoupon": 1.275
+    },
+    {
+      "isin": "IT0005694630",
+      "name": "BTP 3,95% 10.2.2026 - 1.10.2041",
+      "type": "BTP",
+      "issueDate": "2026-02-10",
+      "maturityDate": "01-10-2041",
+      "rateType": "F",
+      "outstandingMln": 17250,
+      "currentCoupon": 1.975
+    },
+    {
+      "isin": "IT0005530032",
+      "name": "BTP 4,45% 1.9.2022 - 1.9.2043",
+      "type": "BTP",
+      "issueDate": "2022-09-01",
+      "maturityDate": "01-09-2043",
+      "rateType": "F",
+      "outstandingMln": 14900,
+      "currentCoupon": 2.225
+    },
+    {
+      "isin": "IT0004923998",
+      "name": "BTP 4,75% 1.3.2013 - 1.9.2044",
+      "type": "BTP",
+      "issueDate": "2013-03-01",
+      "maturityDate": "01-09-2044",
+      "rateType": "F",
+      "outstandingMln": 20483,
+      "currentCoupon": 2.375
+    },
+    {
+      "isin": "IT0005438004",
+      "name": "BTPGREEN 1,5% 30.10.2020 - 30.4.2045",
+      "type": "BTPGREEN",
+      "issueDate": "2020-10-30",
+      "maturityDate": "30-04-2045",
+      "rateType": "F",
+      "outstandingMln": 13500,
+      "currentCoupon": 0.75
+    },
+    {
+      "isin": "IT0005706293",
+      "name": "BTP ind. 2,25% 15.2.2026 - 15.2.2046",
+      "type": "BTPI",
+      "issueDate": "2026-02-15",
+      "maturityDate": "15-02-2046",
+      "rateType": "F",
+      "outstandingMln": 4650,
+      "currentCoupon": 1.125
+    },
+    {
+      "isin": "IT0005631608",
+      "name": "BTPGREEN 4,1% 15.1.2025 - 30.4.2046",
+      "type": "BTPGREEN",
+      "issueDate": "2025-01-15",
+      "maturityDate": "30-04-2046",
+      "rateType": "F",
+      "outstandingMln": 10000,
+      "currentCoupon": 2.05
+    },
+    {
+      "isin": "IT0005083057",
+      "name": "BTP 3,25% 1.9.2014 - 1.9.2046",
+      "type": "BTP",
+      "issueDate": "2014-09-01",
+      "maturityDate": "01-09-2046",
+      "rateType": "F",
+      "outstandingMln": 18904,
+      "currentCoupon": 1.625
+    },
+    {
+      "isin": "IT0005162828",
+      "name": "BTP 2,7% 9.2.2016 - 1.3.2047",
+      "type": "BTP",
+      "issueDate": "2016-02-09",
+      "maturityDate": "01-03-2047",
+      "rateType": "F",
+      "outstandingMln": 18741,
+      "currentCoupon": 1.35
+    },
+    {
+      "isin": "IT0005273013",
+      "name": "BTP 3,45% 1.3.2017 - 1.3.2048",
+      "type": "BTP",
+      "issueDate": "2017-03-01",
+      "maturityDate": "01-03-2048",
+      "rateType": "F",
+      "outstandingMln": 19882,
+      "currentCoupon": 1.725
+    },
+    {
+      "isin": "IT0005363111",
+      "name": "BTP 3,85% 1.9.2018 - 1.9.2049",
+      "type": "BTP",
+      "issueDate": "2018-09-01",
+      "maturityDate": "01-09-2049",
+      "rateType": "F",
+      "outstandingMln": 18118,
+      "currentCoupon": 1.925
+    },
+    {
+      "isin": "IT0005398406",
+      "name": "BTP 2,45% 1.9.2019 - 1.9.2050",
+      "type": "BTP",
+      "issueDate": "2019-09-01",
+      "maturityDate": "01-09-2050",
+      "rateType": "F",
+      "outstandingMln": 16835,
+      "currentCoupon": 1.225
+    },
+    {
+      "isin": "IT0005436701",
+      "name": "BTP ind. 0,15% 15.11.2020 - 15.5.2051",
+      "type": "BTPI",
+      "issueDate": "2020-11-15",
+      "maturityDate": "15-05-2051",
+      "rateType": "F",
+      "outstandingMln": 6803,
+      "currentCoupon": 0.075
+    },
+    {
+      "isin": "IT0005425233",
+      "name": "BTP 1,7% 1.9.2020 - 1.9.2051",
+      "type": "BTP",
+      "issueDate": "2020-09-01",
+      "maturityDate": "01-09-2051",
+      "rateType": "F",
+      "outstandingMln": 17375,
+      "currentCoupon": 0.85
+    },
+    {
+      "isin": "IT0005480980",
+      "name": "BTP 2,15% 12.1.2022 - 1.9.2052",
+      "type": "BTP",
+      "issueDate": "2022-01-12",
+      "maturityDate": "01-09-2052",
+      "rateType": "F",
+      "outstandingMln": 10102,
+      "currentCoupon": 1.075
+    },
+    {
+      "isin": "IT0005534141",
+      "name": "BTP 4,5% 23.2.2023 - 1.10.2053",
+      "type": "BTP",
+      "issueDate": "2023-02-23",
+      "maturityDate": "01-10-2053",
+      "rateType": "F",
+      "outstandingMln": 14500,
+      "currentCoupon": 2.25
+    },
+    {
+      "isin": "IT0005611741",
+      "name": "BTP 4,3% 17.9.2024 - 1.10.2054",
+      "type": "BTP",
+      "issueDate": "2024-09-17",
+      "maturityDate": "01-10-2054",
+      "rateType": "F",
+      "outstandingMln": 15750,
+      "currentCoupon": 2.15
+    },
+    {
+      "isin": "IT0005668238",
+      "name": "BTP 4,65% 9.9.2025 - 1.10.2055",
+      "type": "BTP",
+      "issueDate": "2025-09-09",
+      "maturityDate": "01-10-2055",
+      "rateType": "F",
+      "outstandingMln": 13087,
+      "currentCoupon": 2.325
+    },
+    {
+      "isin": "IT0005647273",
+      "name": "BTP ind. 2,55% 15.11.2024 - 15.5.2056",
+      "type": "BTPI",
+      "issueDate": "2024-11-15",
+      "maturityDate": "15-05-2056",
+      "rateType": "F",
+      "outstandingMln": 4150,
+      "currentCoupon": 1.275
+    },
+    {
+      "isin": "IT0005217390",
+      "name": "BTP 2,8% 1.9.2016 - 1.3.2067",
+      "type": "BTP",
+      "issueDate": "2016-09-01",
+      "maturityDate": "01-03-2067",
+      "rateType": "F",
+      "outstandingMln": 10633,
+      "currentCoupon": 1.4
+    },
+    {
+      "isin": "IT0005441883",
+      "name": "BTP 2,15% 1.3.2021 - 1.3.2072",
+      "type": "BTP",
+      "issueDate": "2021-03-01",
+      "maturityDate": "01-03-2072",
+      "rateType": "F",
+      "outstandingMln": 8650,
+      "currentCoupon": 1.075
+    }
+  ]
+}
