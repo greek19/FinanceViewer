@@ -1,7 +1,8 @@
 import { collection, deleteDoc, doc, onSnapshot, setDoc, writeBatch } from 'firebase/firestore';
 import { db } from './firebase'; import type { Asset,Movement,Pac } from './types';
 export const watch=<T>(uid:string,key:string,cb:(v:T[])=>void)=>onSnapshot(collection(db,'users',uid,key),s=>cb(s.docs.map(d=>({id:d.id,...d.data()}) as T)));
-export const save=<T extends {id:string}>(uid:string,key:string,v:T)=>setDoc(doc(db,'users',uid,key,v.id),v);
+const withoutUndefined=<T extends object>(value:T)=>Object.fromEntries(Object.entries(value).filter(([,field])=>field!==undefined)) as T;
+export const save=<T extends {id:string}>(uid:string,key:string,v:T)=>setDoc(doc(db,'users',uid,key,v.id),withoutUndefined(v));
 export const remove=(uid:string,key:string,id:string)=>deleteDoc(doc(db,'users',uid,key,id));
 const iso=(d:Date)=>d.toISOString().slice(0,10);
 export async function materializePacs(uid:string,pacs:Pac[]){const today=new Date(); const batch=writeBatch(db); let count=0;
