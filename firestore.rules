@@ -1,6 +1,30 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+    match /marketQuotes/{quoteId} {
+      allow read: if request.auth != null;
+      allow create: if validMarketQuote();
+      allow update: if validMarketQuote()
+        && resource.data.fetchedAt < request.time - duration.value(23, 'h');
+      allow delete: if false;
+
+      function validMarketQuote() {
+        return request.auth != null
+          && request.resource.data.keys().hasOnly([
+            'symbol', 'name', 'isin', 'exchange', 'currency', 'price', 'quoteUnit', 'fetchedAt'
+          ])
+          && request.resource.data.symbol is string
+          && request.resource.data.symbol.size() > 0
+          && request.resource.data.symbol.size() <= 80
+          && request.resource.data.name is string
+          && request.resource.data.name.size() <= 250
+          && request.resource.data.price is number
+          && request.resource.data.price > 0
+          && request.resource.data.price < 100000000
+          && request.resource.data.quoteUnit in ['EUR', 'PERCENT']
+          && request.resource.data.fetchedAt == request.time;
+      }
+    }
     match /users/{userId}/{document=**} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }

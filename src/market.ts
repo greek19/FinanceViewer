@@ -1,4 +1,5 @@
 import governmentBondCatalog from './data/italian-government-bonds.json';
+import CryptoJS from 'crypto-js';
 
 export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string;isin?:string;priceAvailable?:boolean};
 
@@ -6,6 +7,8 @@ const apiKey=import.meta.env.VITE_TWELVE_DATA_API_KEY as string|undefined;
 const alphaKey=import.meta.env.VITE_ALPHA_VANTAGE_API_KEY as string|undefined;
 const finnhubKey=import.meta.env.VITE_FINNHUB_API_KEY as string|undefined;
 const endpoint='https://api.twelvedata.com';
+const euronextEndpoint='https://live.euronext.com';
+const euronextKey='24ayqVo7yJma';
 export const marketDataConfigured=Boolean(apiKey);
 let alphaQueue=Promise.resolve();
 let lastAlphaRequest=0;
@@ -16,8 +19,28 @@ const governmentBondResults=(term:string):MarketResult[]=>{
   .filter(bond=>bond.isin.toLowerCase().includes(query)||bond.name.toLocaleLowerCase('it-IT').includes(query)||bond.type.toLocaleLowerCase('it-IT').includes(query))
   .sort((a,b)=>Number(b.isin.toLowerCase()===query)-Number(a.isin.toLowerCase()===query)||a.name.localeCompare(b.name,'it'))
   .slice(0,8)
-  .map(bond=>({symbol:bond.isin,instrument_name:bond.name,instrument_type:'Government Bond',currency:'EUR',country:'Italy',isin:bond.isin,priceAvailable:false}));
+  .map(bond=>({symbol:bond.isin,instrument_name:bond.name,instrument_type:'Government Bond',currency:'EUR',country:'Italy',exchange:'MOTX',isin:bond.isin,priceAvailable:true}));
 };
+
+type EuronextPayload={ct:string;iv:string;s:string};
+const euronextFormat={
+ stringify:()=>'',
+ parse:(value:string)=>{const data=JSON.parse(value) as EuronextPayload;return CryptoJS.lib.CipherParams.create({ciphertext:CryptoJS.enc.Base64.parse(data.ct),iv:CryptoJS.enc.Hex.parse(data.iv),salt:CryptoJS.enc.Hex.parse(data.s)})},
+};
+
+async function getEuronextBondPrice(isin:string,signal?:AbortSignal){
+ const response=await fetch(`${euronextEndpoint}/it/ajax/getDetailedQuote/${encodeURIComponent(isin)}-MOTX`,{signal});
+ if(!response.ok)throw new Error('Quotazione Euronext momentaneamente non disponibile.');
+ const encrypted=await response.json() as EuronextPayload;
+ const decrypted=CryptoJS.AES.decrypt(JSON.stringify(encrypted),euronextKey,{format:euronextFormat}).toString(CryptoJS.enc.Utf8);
+ if(!decrypted)throw new Error('Quotazione Euronext non leggibile.');
+ const html=JSON.parse(decrypted) as string;
+ const document=new DOMParser().parseFromString(html,'text/html');
+ const rawPrice=document.querySelector('#header-instrument-price')?.textContent?.trim().replace(/\s/g,'').replace(',','.');
+ const price=Number(rawPrice);
+ if(!Number.isFinite(price)||price<=0)throw new Error('Prezzo corrente non disponibile su Euronext. Puoi inserirlo manualmente.');
+ return price;
+}
 
 async function request<T>(path:string,params:Record<string,string>,signal?:AbortSignal):Promise<T>{
  const query=new URLSearchParams({...params,apikey:apiKey||''});
@@ -83,6 +106,7 @@ async function getAlphaVantagePrice(result:MarketResult){
 }
 
 export async function getEuroPrice(result:MarketResult){
+ if(result.exchange==='MOTX'&&result.isin)return getEuronextBondPrice(result.isin);
  if(result.priceAvailable===false)throw new Error('Prezzo corrente da inserire manualmente per questo titolo di Stato.');
  try{
   const quote=await request<{price:string}>('/price',{symbol:result.symbol,...(result.exchange?{exchange:result.exchange}:{})});
