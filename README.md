@@ -22,7 +22,7 @@ La chiave API Firebase nel frontend identifica il progetto e non è un segreto. 
 ## GitHub Pages
 
 1. Pubblica il repository su GitHub. Se il repository non si chiama `FinanceViewer`, cambia `base` in `vite.config.ts`.
-2. In **Settings → Pages**, scegli **GitHub Actions** come sorgente.
+2. Prima del primo deploy apri **Settings → Pages**, in **Build and deployment → Source** scegli **GitHub Actions** e salva. Questo passaggio crea il sito Pages: il normale `GITHUB_TOKEN` del workflow non è autorizzato a farlo automaticamente.
 3. In **Settings → Secrets and variables → Actions**, aggiungi `VITE_FIREBASE_API_KEY` come secret e le altre variabili indicate in `.env.example` come repository variables.
 4. Un push su `main` avvierà il deploy.
 
