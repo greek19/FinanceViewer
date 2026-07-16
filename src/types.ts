@@ -1,4 +1,4 @@
 export type AssetType = 'ETF'|'Azioni'|'Obbligazioni'|'Liquidità'|'Fondi pensione'|'Crypto'|'Immobili'|'Altro';
-export interface Asset { id:string; name:string; type:AssetType; value:number; invested:number; currency:'EUR'; updatedAt:string; notes?:string }
+export interface Asset { id:string; name:string; type:AssetType; value:number; invested:number; currency:'EUR'; updatedAt:string; notes?:string; quantity?:number; averageUnitCost?:number; currentUnitPrice?:number; ticker?:string; exchange?:string; marketCurrency?:string }
 export interface Movement { id:string; assetId:string; assetName:string; type:'Acquisto'|'Vendita'|'Versamento'|'Prelievo'; amount:number; date:string; pacId?:string; notes?:string }
 export interface Pac { id:string; name:string; assetId:string; assetName:string; amount:number; day:number; startDate:string; endDate?:string; active:boolean; lastGenerated?:string }
