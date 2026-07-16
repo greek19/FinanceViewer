@@ -1,7 +1,8 @@
-export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string};
+export type MarketResult={symbol:string;instrument_name:string;exchange?:string;instrument_type?:string;currency?:string;country?:string;isin?:string};
 
 const apiKey=import.meta.env.VITE_TWELVE_DATA_API_KEY as string|undefined;
 const alphaKey=import.meta.env.VITE_ALPHA_VANTAGE_API_KEY as string|undefined;
+const finnhubKey=import.meta.env.VITE_FINNHUB_API_KEY as string|undefined;
 const endpoint='https://api.twelvedata.com';
 export const marketDataConfigured=Boolean(apiKey);
 let alphaQueue=Promise.resolve();
@@ -16,6 +17,15 @@ async function request<T>(path:string,params:Record<string,string>,signal?:Abort
 }
 
 export async function searchMarket(term:string,signal?:AbortSignal){
+ const normalized=term.trim().toUpperCase();
+ if(/^[A-Z]{2}[A-Z0-9]{9}[0-9]$/.test(normalized)){
+  if(!finnhubKey)throw new Error('Configura VITE_FINNHUB_API_KEY per cercare le obbligazioni tramite ISIN.');
+  const query=new URLSearchParams({q:normalized,token:finnhubKey});
+  const response=await fetch(`https://finnhub.io/api/v1/search?${query}`,{signal});
+  const result=await response.json();
+  if(!response.ok||result.error)throw new Error(result.error||'Ricerca ISIN momentaneamente non disponibile.');
+  return ((result.result||[]) as Array<{symbol:string;displaySymbol?:string;description?:string;type?:string}>).slice(0,8).map(item=>({symbol:item.symbol,instrument_name:item.description||item.displaySymbol||normalized,instrument_type:item.type||'Bond',isin:normalized}));
+ }
  const result=await request<{data?:MarketResult[]}>('/symbol_search',{symbol:term,outputsize:'8'},signal);
  return result.data||[];
 }

@@ -16,7 +16,7 @@ export async function getCachedEuroPrice(uid:string,result:MarketResult){
   const cached=snapshot.data() as {priceEur?:number;fetchedAt?:number}|undefined;
   if(cached?.priceEur!==undefined&&cached.fetchedAt&&Date.now()-cached.fetchedAt<MAX_AGE)return cached.priceEur;
   const priceEur=await getEuroPrice(result);
-  await setDoc(ref,{symbol:result.symbol,name:result.instrument_name,exchange:result.exchange||null,currency:result.currency||null,priceEur,fetchedAt:Date.now()});
+  await setDoc(ref,{symbol:result.symbol,name:result.instrument_name,isin:result.isin||null,exchange:result.exchange||null,currency:result.currency||null,priceEur,fetchedAt:Date.now()});
   return priceEur;
  })();
  pending.set(key,task);
