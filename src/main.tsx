@@ -3,7 +3,22 @@ import { onAuthStateChanged,signInWithPopup, type User } from 'firebase/auth'; i
 import { watch,save,saveMany,remove,materializePacs,type Asset,type Movement,type Pac } from './store'; import { Layout } from './ui/Layout'; import { Dashboard,Assets,Movements,Pacs,Settings } from './ui/Pages'; import { appUrl } from './base'; import './style.css';
 import { getEuroPrice,type MarketResult } from './market'; import { getCachedEuroPrice } from './quotes';
 const demoAssets:Asset[]=[{id:'1',name:'VWCE',type:'ETF',value:32450,invested:27800,currency:'EUR',updatedAt:'2026-07-15'},{id:'2',name:'Conto deposito',type:'Liquidità',value:14800,invested:14800,currency:'EUR',updatedAt:'2026-07-10'},{id:'3',name:'Fondo pensione',type:'Fondi pensione',value:21900,invested:18500,currency:'EUR',updatedAt:'2026-07-01'},{id:'4',name:'BTP Valore',type:'Obbligazioni',value:11240,invested:11000,currency:'EUR',updatedAt:'2026-07-12'}];
-function assetsFromMovements(assets:Asset[],movements:Movement[]){return assets.map(asset=>{const trades=movements.filter(m=>m.assetId===asset.id&&(m.type==='Acquisto'||m.type==='Vendita')).sort((a,b)=>a.date.localeCompare(b.date));if(!trades.length||trades.some(m=>!m.quantity||m.quantity<=0))return asset;let quantity=0,cost=0;for(const trade of trades){const units=trade.quantity!;if(trade.type==='Acquisto'){quantity+=units;cost+=trade.amount}else{const sold=Math.min(units,quantity),average=quantity?cost/quantity:0;cost=Math.max(0,cost-sold*average);quantity=Math.max(0,quantity-units)}}const averageUnitCost=quantity?cost/quantity:0;if(asset.type==='Obbligazioni'){const value=quantity*(asset.currentUnitPrice||0)/100;return {...asset,nominalValue:quantity,invested:cost,purchasePrice:averageUnitCost*100,value}}const value=quantity*(asset.currentUnitPrice||0);return {...asset,quantity,averageUnitCost,invested:cost,value}})}
+const movementKey=(value?:string)=>value?.trim().toLocaleLowerCase('it-IT').replace(/\s+/g,' ')||'';
+function assetsFromMovements(assets:Asset[],movements:Movement[]){return assets.map(asset=>{
+ const linked=movements.filter(m=>m.assetId===asset.id||movementKey(m.assetName)===movementKey(asset.name)).sort((a,b)=>a.date.localeCompare(b.date));
+ if(!linked.length)return asset;
+ const trades=linked.filter(m=>m.type==='Acquisto'||m.type==='Vendita'),cashFlows=linked.filter(m=>m.type==='Versamento'||m.type==='Prelievo');
+ const tradeNet=trades.reduce((total,m)=>total+(m.type==='Acquisto'?m.amount:-m.amount),0),cashNet=cashFlows.reduce((total,m)=>total+(m.type==='Versamento'?m.amount:-m.amount),0);
+ const historicalInvested=Math.max(0,trades.some(m=>m.type==='Acquisto')?tradeNet:cashNet);
+ const quantitiesComplete=trades.length>0&&trades.every(m=>m.quantity&&m.quantity>0);
+ if(!quantitiesComplete)return {...asset,invested:historicalInvested};
+ let quantity=0,cost=0;
+ for(const trade of trades){const units=trade.quantity!;if(trade.type==='Acquisto'){quantity+=units;cost+=trade.amount}else{const sold=Math.min(units,quantity),average=quantity?cost/quantity:0;cost=Math.max(0,cost-sold*average);quantity=Math.max(0,quantity-units)}}
+ const averageUnitCost=quantity?cost/quantity:0;
+ if(asset.type==='Obbligazioni'){const value=asset.currentUnitPrice===undefined?asset.value:quantity*asset.currentUnitPrice/100;return {...asset,nominalValue:quantity,invested:cost,purchasePrice:averageUnitCost*100,value}}
+ const value=asset.currentUnitPrice===undefined?asset.value:quantity*asset.currentUnitPrice;
+ return {...asset,quantity,averageUnitCost,invested:cost,value};
+})}
 function App(){const [user,setUser]=useState<User|null>(null),[loading,setLoading]=useState(true),[assets,setAssets]=useState<Asset[]>(configured?[]:demoAssets),[movements,setMovements]=useState<Movement[]>([]),[pacs,setPacs]=useState<Pac[]>([]),[theme,setTheme]=useState(localStorage.theme||'dark'),[currentPath,setCurrentPath]=useState(location.pathname);
  useEffect(()=>onAuthStateChanged(auth,u=>{setUser(u);setLoading(false)}),[]); useEffect(()=>{document.documentElement.dataset.theme=theme;localStorage.theme=theme},[theme]);
  useEffect(()=>{if(!user)return; const stops=[watch<Asset>(user.uid,'assets',setAssets),watch<Movement>(user.uid,'movements',setMovements),watch<Pac>(user.uid,'pacs',v=>{setPacs(v);materializePacs(user.uid,v)})];return()=>stops.forEach(x=>x())},[user]);
