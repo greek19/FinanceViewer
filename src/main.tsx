@@ -9,8 +9,8 @@ function assetsFromMovements(assets:Asset[],movements:Movement[]){return assets.
  if(!linked.length)return asset;
  const trades=linked.filter(m=>m.type==='Acquisto'||m.type==='Vendita'),cashFlows=linked.filter(m=>m.type==='Versamento'||m.type==='Prelievo');
  const tradeNet=trades.reduce((total,m)=>total+(m.type==='Acquisto'?m.amount:-m.amount),0),cashNet=cashFlows.reduce((total,m)=>total+(m.type==='Versamento'?m.amount:-m.amount),0);
- const historicalInvested=Math.max(0,trades.some(m=>m.type==='Acquisto')?tradeNet:cashNet);
- const quantitiesComplete=trades.length>0&&trades.every(m=>m.quantity&&m.quantity>0);
+ const historicalInvested=Math.max(0,tradeNet+cashNet);
+ const quantitiesComplete=trades.length>0&&cashFlows.length===0&&trades.every(m=>m.quantity&&m.quantity>0);
  if(!quantitiesComplete)return {...asset,invested:historicalInvested};
  let quantity=0,cost=0;
  for(const trade of trades){const units=trade.quantity!;if(trade.type==='Acquisto'){quantity+=units;cost+=trade.amount}else{const sold=Math.min(units,quantity),average=quantity?cost/quantity:0;cost=Math.max(0,cost-sold*average);quantity=Math.max(0,quantity-units)}}
